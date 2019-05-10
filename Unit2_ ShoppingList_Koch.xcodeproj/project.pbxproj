@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		CA4326C22285CBF000BC3AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326C12285CBF000BC3AE1 /* AppDelegate.swift */; };
-		CA4326C42285CBF000BC3AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326C32285CBF000BC3AE1 /* ViewController.swift */; };
 		CA4326C72285CBF000BC3AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4326C52285CBF000BC3AE1 /* Main.storyboard */; };
 		CA4326C92285CBF100BC3AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4326C82285CBF100BC3AE1 /* Assets.xcassets */; };
 		CA4326CC2285CBF100BC3AE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4326CA2285CBF100BC3AE1 /* LaunchScreen.storyboard */; };
+		CA4326D52285CC6600BC3AE1 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326D42285CC6600BC3AE1 /* ShoppingListTableViewController.swift */; };
+		CA4326D82285CDF500BC3AE1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326D72285CDF500BC3AE1 /* ItemTableViewCell.swift */; };
+		CA4326DB2285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA4326D92285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodeld */; };
+		CA4326DE2285CF0900BC3AE1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326DD2285CF0900BC3AE1 /* CoreDataStack.swift */; };
+		CA4326E02285CF1B00BC3AE1 /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326DF2285CF1B00BC3AE1 /* Item+Convenience.swift */; };
+		CA4326E22285D02E00BC3AE1 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4326E12285D02E00BC3AE1 /* ItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA4326BE2285CBF000BC3AE1 /* Unit2_ ShoppingList_Koch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit2_ ShoppingList_Koch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4326C12285CBF000BC3AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA4326C32285CBF000BC3AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA4326C62285CBF000BC3AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA4326C82285CBF100BC3AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4326CB2285CBF100BC3AE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA4326CD2285CBF100BC3AE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4326D42285CC6600BC3AE1 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
+		CA4326D72285CDF500BC3AE1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		CA4326DA2285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Unit2_ShoppingList_Koch.xcdatamodel; sourceTree = "<group>"; };
+		CA4326DD2285CF0900BC3AE1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CA4326DF2285CF1B00BC3AE1 /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
+		CA4326E12285D02E00BC3AE1 /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		CA4326C02285CBF000BC3AE1 /* Unit2_ ShoppingList_Koch */ = {
 			isa = PBXGroup;
 			children = (
-				CA4326C12285CBF000BC3AE1 /* AppDelegate.swift */,
-				CA4326C32285CBF000BC3AE1 /* ViewController.swift */,
 				CA4326C52285CBF000BC3AE1 /* Main.storyboard */,
+				CA4326E32285D03400BC3AE1 /* Model Controller */,
+				CA4326DC2285CE9600BC3AE1 /* Model */,
+				CA4326D62285CC7000BC3AE1 /* ViewController */,
+				CA4326D32285CC0600BC3AE1 /* Resources */,
+			);
+			path = "Unit2_ ShoppingList_Koch";
+			sourceTree = "<group>";
+		};
+		CA4326D32285CC0600BC3AE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA4326C12285CBF000BC3AE1 /* AppDelegate.swift */,
 				CA4326C82285CBF100BC3AE1 /* Assets.xcassets */,
 				CA4326CA2285CBF100BC3AE1 /* LaunchScreen.storyboard */,
 				CA4326CD2285CBF100BC3AE1 /* Info.plist */,
 			);
-			path = "Unit2_ ShoppingList_Koch";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA4326D62285CC7000BC3AE1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA4326D42285CC6600BC3AE1 /* ShoppingListTableViewController.swift */,
+				CA4326D72285CDF500BC3AE1 /* ItemTableViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CA4326DC2285CE9600BC3AE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA4326D92285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodeld */,
+				CA4326DD2285CF0900BC3AE1 /* CoreDataStack.swift */,
+				CA4326DF2285CF1B00BC3AE1 /* Item+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA4326E32285D03400BC3AE1 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA4326E12285D02E00BC3AE1 /* ItemController.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4326C42285CBF000BC3AE1 /* ViewController.swift in Sources */,
+				CA4326E22285D02E00BC3AE1 /* ItemController.swift in Sources */,
+				CA4326E02285CF1B00BC3AE1 /* Item+Convenience.swift in Sources */,
+				CA4326DE2285CF0900BC3AE1 /* CoreDataStack.swift in Sources */,
 				CA4326C22285CBF000BC3AE1 /* AppDelegate.swift in Sources */,
+				CA4326DB2285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodeld in Sources */,
+				CA4326D82285CDF500BC3AE1 /* ItemTableViewCell.swift in Sources */,
+				CA4326D52285CC6600BC3AE1 /* ShoppingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Unit2_ ShoppingList_Koch/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Unit2_ ShoppingList_Koch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Unit2_ ShoppingList_Koch/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Unit2_ ShoppingList_Koch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA4326D92285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA4326DA2285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodel */,
+			);
+			currentVersion = CA4326DA2285CE8D00BC3AE1 /* Unit2_ShoppingList_Koch.xcdatamodel */;
+			path = Unit2_ShoppingList_Koch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA4326B62285CBF000BC3AE1 /* Project object */;
 }
